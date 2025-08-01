@@ -1,0 +1,97 @@
+/* CSS Reset from joshwcomeau */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+  /**************************/
+
+  html {
+    font-size: 62.5%;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 31.25%;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 18px;
+}
+h2 {
+    font-size: 12px;
+}
+
+h3 {
+    margin: 1rem;
+    font-size: 14px;
+}
+
+p, li {
+    font-size: 12px;
+}
+
+.projects, .skills {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.certs-lics, .exp, .educ, .activity {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.cert-lic {
+    padding-left: 8rem;
+}
+.cert-lic-desc {
+    padding-right: 8rem;
+}
+
+.cert-lic-desc,
+.exp > p:nth-child(even),
+.educ > p:nth-child(2),
+.educ > p:nth-child(4),
+.activity > p:nth-child(2) {
+    text-align: right;
+}
+
+.exps, .educ, .activities {
+    margin-bottom: 2rem;
+}
