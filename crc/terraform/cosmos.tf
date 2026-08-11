@@ -28,12 +28,12 @@ resource "azurerm_cosmosdb_account" "database" {
     failover_priority = 0
   }
 
-# Ignoring all tags in the meantime
+  # Ignoring all tags in the meantime
 
   lifecycle {
-  ignore_changes = [
-    tags
-  ]
+    ignore_changes = [
+      tags
+    ]
   }
 }
 

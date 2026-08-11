@@ -6,12 +6,12 @@ resource "azurerm_storage_account" "frontend" {
   account_replication_type = "LRS"
   account_kind             = "StorageV2"
 
-  https_traffic_only_enabled = true
+  https_traffic_only_enabled      = true
   allow_nested_items_to_be_public = false
 
   custom_domain {
-  name          = "www.janinocencio.xyz"
-  use_subdomain = false
+    name          = "www.janinocencio.xyz"
+    use_subdomain = false
   }
 
   static_website {
