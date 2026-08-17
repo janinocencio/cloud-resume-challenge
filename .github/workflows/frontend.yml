@@ -30,4 +30,4 @@ jobs:
         uses: azure/cli@v2
         with:
           inlineScript: |
-            az storage blob upload-batch --account-name stcloudresumeauedev01 --destination '$web' --source crc/frontend --overwrite
+            az storage blob upload-batch --account-name stcloudresumeauedev01 --destination '$web' --source crc/frontend --overwrite --auth-mode login
