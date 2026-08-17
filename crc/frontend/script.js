@@ -1,4 +1,4 @@
-const functionUrl = "https://funccloudresumeauedev01.azurewebsites.net/api/visitorcountercd ";
+const functionUrl = "https://funccloudresumeauedev01.azurewebsites.net/api/visitorcounter";
 
 fetch(functionUrl)
     .then(response => response.json())
