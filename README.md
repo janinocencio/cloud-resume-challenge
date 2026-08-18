@@ -2,6 +2,8 @@
 
 My implementation of the Cloud Resume Challenge using Microsoft Azure.
 
+URL: https://www.janinocencio.xyz/
+
 ## Architecture
 
 The project consists of:
