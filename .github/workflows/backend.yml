@@ -26,10 +26,11 @@ jobs:
           tenant-id: ${{ vars.AZURE_TENANT_ID }}
           subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
 
-      - name: Deploy Azure Function
-        uses: Azure/functions-action@v1
+      - name: Setup Azure Functions Core Tools
+        uses: Azure/setup-azure-functions-core-tools@v1
         with:
-          app-name: funccloudresumeauedev01
-          package: crc/backend
-          remote-build: true
-          
+          version: 4
+
+      - name: Deploy Azure Function
+        working-directory: crc/backend
+        run: func azure functionapp publish funccloudresumeauedev01 --python
