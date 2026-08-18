@@ -100,7 +100,7 @@ Terraform state files and files containing secrets are excluded from Git using .
 
 GitHub Actions automatically deploys changes to Azure.
 
-## Frontend
+### Frontend
 
 Changes under:
 
@@ -112,7 +112,7 @@ trigger the frontend workflow as follows:
 2. Authenticates to Azure using OIDC.
 3. Uploads the frontend files to the Azure Storage `$web` container.
 
-## Backend
+### Backend
 
 Changes under:
 
