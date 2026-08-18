@@ -26,10 +26,8 @@ jobs:
           tenant-id: ${{ vars.AZURE_TENANT_ID }}
           subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
 
-      - name: Setup Azure Functions Core Tools
-        uses: Azure/setup-azure-functions-core-tools@v1
-        with:
-          version: 4
+      - name: Install Azure Functions Core Tools
+        run: npm install -g azure-functions-core-tools@4 --unsafe-perm true
 
       - name: Deploy Azure Function
         working-directory: crc/backend
