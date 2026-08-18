@@ -31,6 +31,5 @@ jobs:
         with:
           app-name: funccloudresumeauedev01
           package: crc/backend
-          scm-do-build-during-deployment: true
-          enable-oryx-build: true
+          remote-build: true
           
