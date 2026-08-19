@@ -39,8 +39,3 @@ def VisitorCounter(req: func.HttpRequest) -> func.HttpResponse:
         }),
         mimetype="application/json"
     )
-
-# Test remote build
-# Test backend deployment fix
-# Test backend deployment fix #2
-# Test backend deployment fix #3
